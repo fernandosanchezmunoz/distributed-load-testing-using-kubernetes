@@ -1,5 +1,5 @@
 {
-  "id": "/locust-worker",
+  "id": "/locust/worker",
   "instances": 10,
   "container": {
     "type": "DOCKER",
@@ -11,7 +11,7 @@
   "mem": 256,
   "labels": {
     "LOCUST_MODE": "worker",
-    "LOCUST_MASTER": "locust-master",
+    "LOCUST_MASTER": "locust.marathon.l4lb.thisdcos.directory",
     "TARGET_HOST": "http://workload-simulation-webapp.appspot.com"
   }
 }

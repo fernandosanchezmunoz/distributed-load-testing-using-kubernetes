@@ -1,6 +1,6 @@
 {
   "volumes": [],
-  "id": "/locust-master",
+  "id": "/locust/locust",
   "cmd": null,
   "args": null,
   "user": null,
@@ -65,7 +65,7 @@
       "protocol": "tcp",
       "name": "loc-master-web",
       "labels": {
-        "VIP_0": "locust-master:8089"
+        "VIP_0": "locust:8089"
       }
     },
     {
@@ -73,7 +73,7 @@
       "protocol": "tcp",
       "name": "loc-master-p1",
       "labels": {
-        "VIP_1": "locust-master:5557"
+        "VIP_1": "locust:5557"
       }
     },
     {
@@ -81,7 +81,7 @@
       "protocol": "tcp",
       "name": "loc-master-p2",
       "labels": {
-        "VIP_2": "locust-master:5558"
+        "VIP_2": "locust:5558"
       }
     }
   ],
